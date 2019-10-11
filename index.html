@@ -33,18 +33,18 @@
 
     <div class="row">
 
-      <article id="kelvin" class="container-fluid">
+      <article id="kelvin" class="container">
         <h2>Temperture Converter</h2>
         <p>Give your temperture in Celsius, get back temperture in Kelvin, instantly!</p>
 
         <fieldset>
           <label for="degC"></label>
-          <input v-model="degC" id="degC" type="number" placeholder="Celsius" min="1" max="100">
+          <input v-model="degC" id="degC" type="number" placeholder="Celsius" min="-273.15" max="100">
           <span id="firstWarning" class="text-danger"></span>
           °C
         </fieldset>
 
-        <h3 class="mt-2">{{result}}</h3>
+        <h3 class="mt-2"><b>{{result}}</b></h3>
       </article>
     </div>
 

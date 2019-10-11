@@ -12,8 +12,11 @@ const adder = new Vue({
       if(isNaN(kelvin)){
         return ``
       }
+      else if(kelvin < 0){
+        return `Nothing can go lower than 0°K!`
+      }
       else{
-      return ` is ${kelvin}°K`
+      return `is ${kelvin}°K`
       }
     }
   }
