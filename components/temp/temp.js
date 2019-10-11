@@ -13,7 +13,7 @@ const adder = new Vue({
         return ``
       }
       else if(kelvin < 0){
-        return `Nothing can go lower than 0°K!`
+        return `Nothing can go lower than Absolute Zero!`
       }
       else{
       return `is ${kelvin}°K`
