@@ -24,10 +24,7 @@
   <link href="index.css" rel="stylesheet">
 
   <!-- Vue component styles -->
-  <link href="components/adder/adder.css" rel="stylesheet">
-  <link href="components/subtracter/subtracter.css" rel="stylesheet">
-  <link href="components/findSum/findSum.css" rel="stylesheet">
-  <link href="components/coder/coder.css" rel="stylesheet">
+  <link href="./components/temp/temp.css" rel="stylesheet">
 
 </head>
 
@@ -36,89 +33,18 @@
 
     <div class="row">
 
-      <article id="adder" class="col-md-4 ">
-        <h2>Vue is awesome!</h2>
-        <p>Two-way data binding listens for changes and automatically updates.</p>
-        <p>This is component adds!</p>
+      <article id="kelvin" class="col-md-4 ">
+        <h2>Temperture Converter</h2>
+        <p>Give your temperture in Celsius, get back temperture in Kelvin, instantly!</p>
 
         <fieldset class="mt-2">
-          <label for="guest">Enter your name (2 to 20 characters):</label>
-          <input v-model="guest" id="guest" type="text" minlength="2" maxlength="20">
-        </fieldset>
-
-        <fieldset class="mt-2">
-          <label for="firstNumber">Enter first number (1 to 100):</label>
-          <input v-model="firstNumber" id="firstNumber" type="number" min="1" max="100">
+          <label for="degC">Celsius</label>
+          <input v-model="degC" id="degC" type="number" placeholder="0" min="1" max="100">
           <span id="firstWarning" class="text-danger"></span>
-        </fieldset>
-
-        <fieldset class="mt-2">
-          <label for="secondNumber">Enter second number (1 to 100):</label>
-          <input v-model="secondNumber" id="secondNumber" type="number" min="1" max="100">
-          <span id="secondWarning" class="text-danger"></span>
         </fieldset>
 
         <h3 class="mt-2">{{result}}</h3>
       </article>
-
-      <article id="subtracter" class="col-md-4 ">
-        <h2>No build tools required!</h2>
-        <p>Here's another component.</p>
-        <p>This one subtracts!</p>
-
-        <fieldset class="mt-2">
-          <label for="first">Enter first number (1 to 100):</label>
-          <input v-model="first" id="first" type="number" min="1" max="100">
-          <span id="firstWarning" class="text-danger"></span>
-        </fieldset>
-
-        <fieldset class="mt-2">
-          <label for="second">Enter second number (1 to 100):</label>
-          <input v-model="second" id="second" type="number" min="1" max="100">
-          <span id="secondWarning" class="text-danger"></span>
-        </fieldset>
-
-        <h3 class="mt-2">{{difference}}</h3>
-      </article>
-      <article id="findSum" class="col-md-4 ">
-        <p>This one finds the  sum until the specified term!!</p>
-
-        <fieldset class="mt-2">
-          <label for="number1">Enter number of terms:</label>
-          <input v-model="number1" id="number1" type="number" min="1" max="100">
-          <span id="firstWarning" class="text-danger"></span>
-        </fieldset>
-     
-        <h3 class="mt-2">{{sumofNumbers}}</h3>
-      </article>
-
-      <article id="coder" class="col-md-4 ">
-        <h2>Encrypt with the Viginere Cipher</h2>
-        <p>This cipher encodes each letter of the original word using the codeword!</p>
-        <p>An a will add one letter, b will add two, and so on.</p>
-        <fieldset class="mt-2">
-          <label for="word">Enter word to encode:</label>
-          <input v-model="word" id="word" type="text">
-        </fieldset>
-        <fieldset class="mt-2">
-          <label for="codeword">Enter codeword:</label>
-          <input v-model="codeword" id="codeword" type="text">
-        </fieldset>
-        <p>Encrypted Word: {{encryptedWord}}</p>
-      </article>
-      
-      <article class="col-md-4 ">
-        <h2>Build tools would help us combine HTML files</h2>
-        <p>It's nice to start without having to add them, so everything goes in this one HTML file. </p>
-        <p>Add your own component! </p>
-      </article>
-
-      <article class="col-md-4 ">
-        <h2>With build tools</h2>
-        <p>HTML, CSS, and JS for each component can go in a single .vue file. </p>
-        <p>Learn more at <a href="https://vuejs.org/">Vue.js</a>! </p>
-      </article>
-
     </div>
 
   </main>
@@ -154,10 +80,7 @@
 
   <!-- Vue components -->
 
-  <script src="components/adder/adder.js"></script>
-  <script src="components/subtracter/subtracter.js"></script>
-  <script src="components/findSum/findSum.js"></script>
-  <script src="components/coder/coder.js"></script>
+  <script src="components/temp/temp.js"></script>
 
 </body>
 
